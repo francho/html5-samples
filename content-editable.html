@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<article id="mytext" contenteditable="true">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac placerat purus, eu lacinia nisl. Morbi ac
+        tempor nunc, ut gravida lacus. Morbi laoreet libero a mollis iaculis. Ut dignissim non tellus ac
+        scelerisque.</p>
+
+    <p>Proin et orci quam. Vivamus a diam in ante egestas sagittis. Nam cursus ut magna vel scelerisque.</p>
+</article>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+    $(function() {
+        $('#mytext').focusout(function() {
+            alert('Handler for .change() called.');
+        });
+    });
+</script>
+
+</body>
+</html>
